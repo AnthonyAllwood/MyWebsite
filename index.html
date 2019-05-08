@@ -7,11 +7,443 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href=" style.css" rel="stylesheet" type="text/css" media="all"/>
+    
+    <!-- Bootstrap Javascript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <style>
+.content
+{
+	background: url(./computer-science-engineering.png) no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: soft-light;
+	
+}
 
+.one{
+    height: 500px;
+}
+
+.carousel-control-prev-icon1,
+.carousel-control-next-icon1 {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon1:after
+{
+  content: '>';
+  font-size: 27px;
+  color: blue;
+}
+
+.carousel-control-prev-icon1:after {
+  content: '<';
+  font-size: 27px;
+  color: blue;
+}
+
+.parent-container {
+   display: flex;
+}
+
+/* CSS for Timeline*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: " ";
+    background: #ffffff;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: " ";
+    background: #ffffff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+#map {
+    height: 100%;
+}
+
+
+    </style>
+    
     <title>Anthony Allwood</title>
   </head>
   <body>
-    <h1>Anthony Allwood</h1>
+      
+    
+    <div style= "text-align: center; background-color: #0000FF; padding-bottom: 5px" id= "home"> <h1><b>Anthony Allwood</b></h1> </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <button class="navbar-toggler" type="button" data-toggle="collaspe" data-target= "#navbarNav" aria-contols="navbarNav" aria-expanded="false" aria-label= "Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
+       <div class="collaspe navbar-collaspe nav" id="navbarNav">
+           <ul class= "navbar-nav">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#home"> HOME <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#bio"> BIOGRAPHY </a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#work"> WORK EXPERIENCE </a>
+               </li>
+               <li class ="nav-item">
+                   <a class="nav-link" href="#projects"> PROJECTS </a>
+               </li>
+               <li class = "nav-item">
+                   <a class="nav-link" href="#contactinfo"> CONTACT INFO</a>
+               </li>
+
+           </ul>
+        
+       </div>
+       </div>
+        
+    </nav>
+
+            <div class="one content">
+                    <div id="firstcarousel" class="carousel slide" data-ride="carousel" style="padding-top: 200px">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div style= "text-align: center; color: #ffffff;"> <h1><b>Computer Engineer</b></h1></div>
+                                <div style= "text-align: center; color: #ffffff;"> Engaged in numerous projects involving hardware and software design, website development, and API's </div>
+                                <div style= "text-align: center;"> <a href= "Anthony Allwood Official Resume (NSBE) (1).docx" class="btn btn-primary" role="button" style="margin-top: 20px"> Resume</a></div>
+                              </div>
+                              <div class="carousel-item">
+                                <div style= "text-align: center; color: #ffffff;"> <h1><b>STEM Student</b></h1></div>
+                                <div style= "text-align: center; color: #ffffff;"> Majoring in Computer Engineering at the State University of New York at New Paltz </div>
+                                <div style= "text-align: center;"> <a href= "https://newpaltz-csm.symplicity.com/employers/" class="btn btn-primary" role="button" style="margin-top: 20px"> HAWKHIRE </a></div>
+                              </div>
+                              <div class="carousel-item">
+                                <div style= "text-align: center; color: #ffffff;"> <h1><b>NSBE Collegiate Member</b></h1></div>
+                                <div style= "text-align: center; color: #ffffff;"> Active collegiate member of the National Society of Black Engineers</div>\
+                                <div style= "text-align: center;"> <a href= "http://nsbe.org/home.aspx" class="btn btn-primary" role="button"> JOIN NSBE </a></div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#firstcarousel" role="button" data-slide="prev" style="padding-top: 200px;">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#firstcarousel" role="button" data-slide="next" style="padding-top: 200px">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+
+            </div>
+
+
+            <!-- Biography -->
+
+            <div class="bio-container" id="bio" style= "background-color: #e6e6e6; text-align: center; padding-top: 20px;">
+                <h2 style=> <b>BIOGRAPHY</b></h2>
+            </div>
+                <div class= "parent-container" style= "background-color: #e6e6e6; margin-top: -10px; height: 650px; padding-top: 50px">
+                    <div class= "container">
+                        <div class="row"> 
+                            <div class="col"> 
+                                <div id="secondcarousel" class="carousel slide" data-ride="carousel" style="padding-top: 100px">  
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="anthony.png" alt="..." style= "margin-left: 180px; width:400px; height:300px; border: 3px solid black">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#secondcarousel" role="button" data-slide="prev" style="margin-left: 90px">
+                                            <span class="carousel-control-prev-icon1" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#secondcarousel" role="button" data-slide="next" style="margin-right: 30px">
+                                            <span class="carousel-control-next-icon1" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3 style= "text-align: center; color: #0000FF "> <b>Who is Anthony Allwood?</b></h3>
+                                <h6 style= "background-color: #f2f2f2; padding-top: 20px; padding-right:50px; border:3px; border-style:solid; border-color:#000000; display: inline-block; padding: 1.5em;"> <b>Anthony Allwood is a hard-working and dedicated student, leader, and athlete who strives for success and puts in the utmost effort in order to achieve his goals. He is an aspring computer engineer, and a senior attending the State University of New York at New Paltz in pursuit of a Bachelor's degree in Computer Engineering. Anthony has spent the majority of his life as a student athlete who excels in his educational journey with a passion for technological devices and processes while maintaining his love and ability to play basketball and workout in the gym.
+                                    He portrays extreme appreciation and interest in how technology works and the complex processes that allow devices to function and benefit various users and companies. He is also shown an interest and desire to help come up with solutions to problems and errors that users may have with devices such as computers and cell phones. <br><br>Anthony has taken part in various activities and projects that have helped him gain the knowledge and experience that is needed to succeed in his career. He is currently an active member of the National Society of Black Engineers (NSBE) which is a non-profit educational 
+                                    organization that supports and promotes the aspirations of collegiate and pre-collegiate students and technical professionals in engineering and technology. Anthony is also the captain of his Senior Design Project team which involves the creation of a security drone that can fly mid to high altitudes and record information with a modified camera. Anthony also has the opportunity to work as a Computer Engineering/Information Technology intern at the non-profit educational organization in which he created and developed numerous websites and mobile applications, as well as working with potential clients and people of influence.</b></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            
+            <!-- Work Experience -->
+           
+            <div class="experience-container" id="work" style= "background-color: #ffffff; text-align: center; padding-top: 20px;">
+                <h2 style=> <b>WORK EXPERIENCE</b></h2>
+            </div>
+        
+            <div class= "parent-container" style= "background-color: #ffffff; margin-top: -10px; padding-top: 50px">
+                <div class= "container">
+                    <div class= "row">
+                        <div class= "column">
+                            <div class="container mt-5 mb-5">
+                                <div class="row">
+                                    <div class="col-md-10 offset-md-3">
+                                        <h4 style= "text-align: center; margin-bottom: 40px"><b>Experience Timeline</b></h4>
+                                        <ul class="timeline">
+                                            <li>
+                                                <a target="#" href="#">Senior Design</a>
+                                                <p>Design project involving the creation of a security drone with flight capabilities and facial recognition characteristics. To be presented at Design EXPO. </p>
+                                                <p style="color: #808080"> <b>October 2018- Present Day, New Paltz, NY</b></p>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.plannedacts.org/">16 Things Kids Can Do</a>
+                                                <p>Computer Engineer/Information Technology Intern. Creation and design of websites and mobile applications.</p>
+                                                <p style="color: #808080"> <b>May 2018 - August 2018, Manhattan, NY</b></p>
+                                            </li>
+                                            <li>
+                                                <a href="http://nsbe.org/home.aspx">National Society of Black Engineers (NSBE)</a>
+                                                <p>Active Member of the National Society of Black Engineers. Promoting diversity on the SUNY New Paltz campus and encouraging young aspiring students to join the engineering community.</p>
+                                                <p style="color: #808080"> <b>Fall 2017 - Present Day, New Paltz, NY</b></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                    
+                    <div class= "container">
+                        <div class= "row"> 
+                            <div class= "col">
+                                <div id="thirdcarousel" class="carousel slide" data-ride="carousel" style="padding-top: 100px">
+                                    <ol class="carousel-indicators" style= "margin-right: 30px">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="newpaltz.jpg" alt="..." style= "margin-left: 180px; width:400px; height:300px; border: 3px solid black">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="16 things kids can do.png" alt="..." style= "margin-left: 180px; width:400px; height:300px; border: 3px solid black">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="nsbelogo.png" alt="..." style= "margin-left: 180px; width:400px; height:300px; border: 3px solid black">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#thirdcarousel" role="button" data-slide="prev" style="margin-left: 90px">
+                                        <span class="carousel-control-prev-icon1" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#thirdcarousel" role="button" data-slide="next" style="margin-right: 30px">
+                                        <span class="carousel-control-next-icon1" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            
+            <!-- Projects -->
+
+            <div class="project-container" id= "projects" style= "background-color: #0000FF; color: #ffffff; text-align: center; padding-top: 20px;">
+                    <h2 style=> <b>Projects</b></h2>
+                </div>
+                    
+            <div class= "parent-container" id= "drone" style="background-color: #0000FF; padding-top: 50px; margin-top: -10px; height: 550px">
+                <div class = "container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="dronepicture.jpg" alt="..." style= "margin-top: 30px; margin-left: 220px; width:500px; height:350px; border: 15px solid black">
+                        </div>
+                    </div>
+                </div>
+
+                <div class= "container" style="margin-right: 50px">
+                    <div class="row">
+                        <div class="col md-5 offset-md-3">
+                            <p style= "margin-top: 50px; margin-right: 100px; color: #ffffff"> <b>Project Name</b> <br> Drone Application <br><br> <b>Description</b> <br> The drone's functions and movement will be manually controlled by utilizing bluetooth connectivity established through mobile application software.
+                                <br><br> <b>Topics</b> <br> Android Studio <br> Arduino <br> Bluetooth connectivity
+                            </p>
+                            <div style= "margin-top: 20px; margin-right: 100px;"> <a href= "https://github.com/AnthonyAllwood/DroneApp" class="btn btn-primary" role="button"> Github </a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class= "parent-container" id= "armleg" style="background-color: #0000FF; padding-top: 10px; margin-top: -10px; height: 550px">
+                    <div class = "container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="armlegv8processor.png" alt="..." style= "margin-top: 30px; margin-left: 220px; width:500px; height:350px; border: 15px solid black">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class= "container" style="margin-right: 50px">
+                        <div class="row">
+                            <div class="col md-5 offset-md-3">
+                                <p style= "margin-top: 50px; margin-right: 100px; color: #ffffff"> <b>Project Name</b> <br> ARM Legv8 Processor <br><br> <b>Description</b> <br> This project involves the creation of a detailed design and layout of an ARM LEGv8 processor. Given a set of unique instructions for the processor to perform, the data path of each class of instruction as well as the overall datapath of the processor was constructed.
+                                    <br><br> <b>Topics</b> <br> Computer Architecture (RISC) <br> Quartus II 15.0 (64-Bit) <br> Verilog
+                                </p>
+                                <div style= "margin-top: 20px; margin-right: 100px;"> <a href= "https://github.com/AnthonyAllwood/ARMLEGv8Processor" class="btn btn-primary" role="button"> Github </a></div>
+    
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+
+            <div class= "parent-container" id= "soc" style="background-color: #0000FF; padding-top: 10px; margin-top: -10px; height: 580px">
+                    <div class = "container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="systemonchip.jpg" alt="..." style= "margin-top: 30px; margin-left: 220px; width:500px; height:350px; border: 15px solid black">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class= "container" style="margin-right: 50px">
+                        <div class="row">
+                            <div class="col md-5 offset-md-3">
+                                <p style= "margin-top: 50px; margin-right: 100px; color: #ffffff"> <b>Project Name</b> <br> System-on-Chip: PYNQ-Z1 <br><br> <b>Description</b> <br> This project involves analyzing and refining the Verilog code and design for a 32-bit MIPS processor and implementing specific instructions on the PYNQ-Z1 hardware board. This implementation, along with the establishment, synthesis, and analysis of ZYNQ design were completed using the Xilinx Vivado Integrated Development Environment.
+                                    <br><br> <b>Topics</b> <br> System-on-Chip <br> Xilinx <br> Verilog
+                                </p>
+                                <div style= "margin-top: 20px; margin-right: 100px;"> <a href= "https://github.com/AnthonyAllwood/SystemonChipPYNQZ1" class="btn btn-primary" role="button"> Github </a></div>
+    
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+
+            <div class= "parent-container" id= "remotecar" style="background-color: #0000FF; padding-top: 10px; margin-top: -10px; height: 580px">
+                    <div class = "container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="remotecontrolledcar.png" alt="..." style= "margin-top: 30px; margin-left: 220px; width:500px; height:350px; border: 15px solid black">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class= "container" style="margin-right: 50px">
+                        <div class="row">
+                            <div class="col md-5 offset-md-3">
+                                <p style= "margin-top: 50px; margin-right: 100px; color: #ffffff"> <b>Project Name</b> <br> Remote Controlled Car <br><br> <b>Description</b> <br> This project involves the construction and establishment of a car system controlled by a mobile android application.
+                                    <br><br> <b>Topics</b> <br> Android Studio <br> Arduino <br> Bluetooth connectivity
+                                </p>
+                                <div style= "margin-top: 20px; margin-right: 100px;"> <a href= "https://github.com/AnthonyAllwood/RemoteControlledCar" class="btn btn-primary" role="button"> Github </a></div>
+    
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            
+            <!-- Contact Info -->
+            
+            <div class="bio-container" id= "contactinfo" style= "background-color: #e6e6e6; text-align: center; padding-top: 20px;">
+                    <h2 style=> <b>CONTACT INFO</b></h2>
+            </div>
+
+            <div class= "container-fluid" style = "background-color: #e6e6e6; margin-top:-10px; height: 320px; text-align: center">
+                <p style= "text-align: center; padding-top: 30px; color:#808080"> <b>Location: Bronx, NY</b> </p>
+                <p style= "text-align: center; color:#808080"><b>Email:</b> </p>
+                <a class= "link" href="mailto:a.allwood9@gmail.com">a.allwood9@gmail.com <br></a>
+                <p style= "text-align: center; color:#808080; padding-top: 20px"><b>Github:</b> </p>
+                <a class="link" href="https://github.com/AnthonyAllwood">AnthonyAllwood <br></a>
+                <p style= "text-align: center; color:#808080; padding-top: 20px"><b>LinkedIn:</b> </p>
+                <a class="link" href="https://www.linkedin.com/in/anthony-allwo?od-ab3a11159/">Anthony Allwood</a>
+                
+            </div>
+            
+            <div class="container-fluid" style="height: 400px">
+                    <div id="map"></div>
+                    <script>
+                      var map;
+                      function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                          center: {lat: 40.8447819, lng: -73.8648268},
+                          zoom: 8
+                        });
+                      }
+                    </script>
+                     
+            </div>
+
+            <div class="d-flex justify-content-center" style="background-color: #00001a; height: 250px; margin-top:10px;">
+                <div class="p-2" style="margin-right: 20px">
+                            <p style= "color: #ffffff;"> <h4><b>Menu</b></h4></p>
+                            <a class="link" href="#home"> Home <br> </a>
+                            <a class="link" href="#bio"> Biography <br> </a>
+                            <a class="link" href="#work"> Work Experience <br></a>
+                            <a class="link" href="#projects"> Projects <br></a>
+                            <a class="link" href="#contactinfo"> Contact Info <br></a>
+
+                </div>
+                <div class="p-2">
+                                <p style= "color: #ffffff;"> <h4><b>Projects</b></h4></p>
+                                <a class="link" href="#drone"> Drone Application <br></a>
+                                <a class="link" href="#armleg"> ARM Legv8 Processor <br></a>
+                                <a class="link" href="#soc"> System-on-Chip: PYNQ-Z1 <br></a>
+                                <a class="link" href="#remotecar"> Remote Controlled Car <br></a>
+                                         
+                </div>
+                <div class="p-2" style="margin-left: 20px">
+                                <p style= "color: #ffffff;"> <h4><b>Contact Me</b></h4></p>
+                                <a href="mailto:a.allwood9@gmail.com">Email Me <br></a>
+                                <a href="https://github.com/AnthonyAllwood">Github <br></a>
+                                <a href="https://www.linkedin.com/in/anthony-allwood-ab3a11159/">LinkedIn</a>
+
+                </div>
+                                   
+            </div>
+
+            <div class="container-fluid" style= "background-color: #00001a; height: 50px">
+                <p style= "text-align: center; color: #ffffff">© 2019 Anthony Allwood</p>
+            </div>
+                    
+             
+
+
+
+    
+    <!--Google Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjsRJukCBBBmzuGO5k5ZtY0UbC-7DR5dI&callback=initMap"
+    async defer></script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

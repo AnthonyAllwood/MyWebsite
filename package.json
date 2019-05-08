@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AnthonyAllwood/MyWebsite/issues"
   },
-  "homepage": "https://github.com/AnthonyAllwood/MyWebsite#readme"
+  "homepage": "https://github.com/AnthonyAllwood/MyWebsite#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
