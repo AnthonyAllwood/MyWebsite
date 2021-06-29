@@ -2,7 +2,7 @@ FROM node:8.7
 
 ADD /  /app
 
-WORKDIR app
+WORKDIR /app
 
 RUN npm install 
 
