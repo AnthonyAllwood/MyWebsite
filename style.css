@@ -1,4 +1,7 @@
 /*TAG SELECTORS*/
+body{
+    font-family: 'Overpass', sans-serif;
+}
 h2{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -14,25 +17,48 @@ h6 {
     padding-bottom: 30px;
 }
 .navbar-brand {
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+    color: #e7c32b;
+    font-family: 'Arizonia', cursive;
 }
+
 .footercontent
 {
-	background: url(./cpubackgroundimage.jpg) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)), url(./cpubackgroundimage.jpg);
 	background-size: 100% 100%;
-	background-blend-mode: soft-light;
     text-align: center;
     padding-bottom: 3%;
-    color: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    color: #e7c32b;
 	
+}
+
+.welcome-heading{
+    font-family: 'Permanent Marker', cursive;
 }
 
 .biocontent
 {
     background-color: #cfcfcf;
-    text-align: center;
 
+}
+.projectscontent{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.9)), url('http://pavbca.com/walldb/original/b/f/d/115598.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #e7c32b;
+}
+.biotext{
+    padding-top: 3%; 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('http://2.bp.blogspot.com/-hCbufL975rw/UQ048pcl8bI/AAAAAAAAACM/74HmNRYt9hY/s1600/sky_at_night_2_hd_widescreen_wallpapers_1920x1200.jpeg');
+    color: #e7c32b;
+    border: 5px solid white;
+    border-radius: 10%;
+}
+
+.biocarousel{
+    text-align: center;
 }
 
 .row{
@@ -84,7 +110,6 @@ h6 {
 }
 .header p{
     color: #e7c32b;
-    font-family: 'Kanit', sans-serif;
     font-size: 64px;
 }
 
@@ -124,10 +149,18 @@ h6 {
     border-bottom: 5px solid #ffffff;
     background-color: #000000;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
 }
-
+.googleborder{
+    border-top: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+}
 /*ID SELECTORS*/
 #map {
     height: 100%;
 }
 
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+
+}
