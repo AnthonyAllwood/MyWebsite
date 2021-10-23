@@ -162,5 +162,7 @@ h6 {
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 480px) {
-
+    .navbar-brand {
+        font-size: 20px;
+    }
 }
